@@ -65,6 +65,7 @@ function removeFromCart(item) {
   if(item || Object.keys(cart)){ return console.log("That item is not in your cart.")}
      return cart;
 }
+}
  }
 function placeOrder(cardNumber) {
   if(cardNumber===undefined)
