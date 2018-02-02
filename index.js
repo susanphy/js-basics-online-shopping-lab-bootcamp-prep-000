@@ -62,6 +62,7 @@ for (var i = 0; i < cart.length; i++){
     cart = cart.slice(0, i).concat(cart.slice(i + 1))
 }
 }
+}
 
 function placeOrder(cardNumber) {
   if(cardNumber===undefined)
