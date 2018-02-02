@@ -60,7 +60,7 @@ function removeFromCart(item) {
   for( var i=0; i< cart.length; i++) {
     if (Object.keys(cart[i])[0] == item ){
       console.log("in the loop-found");
-    
+
       total -= cart[i][item];
     cart.splice(i,1);
     return cart;
