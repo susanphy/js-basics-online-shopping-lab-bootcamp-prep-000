@@ -57,7 +57,10 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+for (var i = 0; i < cart.length; i++){
+  if (cart[i].hasOwnProperty(removeitem)) {
+    cart = cart.slice(0, i).concat(cart.slice(i + 1))
+}
 }
 
 function placeOrder(cardNumber) {
