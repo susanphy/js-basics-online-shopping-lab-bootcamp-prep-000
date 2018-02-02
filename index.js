@@ -57,16 +57,17 @@ function total() {
 }
 
 function removeFromCart(item) {
-  for(let i =0; i<cart.length; i++){
-           if (cart[i].hasOwnProperty(item)){
-             cart.splice(i, 1)
-          ;
-
-  if(item =/= Object.keys(cart)){
-     console.log("That item is not in your cart.")}
-     return cart;
-}
-}
+  for( var i=0; i< cart.length; i++) {
+    if (Object.keys(cart[i])[0] == item ){
+      console.log("in the loop-found");
+    
+      total -= cart[i][item];
+    cart.splice(i,1);
+    return cart;
+  } else {
+      console.log("That item is not in your cart");
+    }
+  }
  }
 function placeOrder(cardNumber) {
   if(cardNumber===undefined)
