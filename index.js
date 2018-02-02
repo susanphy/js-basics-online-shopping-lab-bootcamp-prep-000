@@ -62,6 +62,8 @@ for (var i = 0; i < cart.length; i++){
     cart = cart.slice(0, i).concat(cart.slice(i + 1))
 }
 }
+console.log("That item is not in your cart.")
+return cart;
 }
 
 function placeOrder(cardNumber) {
