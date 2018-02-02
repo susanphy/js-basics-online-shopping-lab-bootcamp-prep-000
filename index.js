@@ -62,7 +62,7 @@ function removeFromCart(item) {
              cart.splice(i, 1)
              return cart;
 
-  if(item || Object.keys(cart)){ 
+  if(item || Object.keys(cart)){
      console.log("That item is not in your cart.")}
      return cart;
 }
